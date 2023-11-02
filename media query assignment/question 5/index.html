@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+    max-width: 100%;
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "box1 box2 box2 box2 box2 box2 box2  box4"
+    "box1 box2 box2 box2 box2 box2 box2 box4"
+    "box1 box2 box2 box2 box2 box2 box2 box4"
+    "box1 box2 box2 box2 box2 box2 box2 box4"
+    "box1 box2 box2 box2 box2 box2 box2 box4"
+    "box1 box3 box3 box3 box3 box3 box3 box4"
+     "box1 box3 box3 box3 box3 box3 box3 box4" 
+     "box1 box3 box3 box3 box3  box3 box3 box4" 
+     "box1 box3 box3 box3 box3 box3 box3  box4" ;
+        }
+        .box{
+            color:white;
+            padding: 20px;
+            opacity: 0.7;
+        }
+        
+       
+       .box1{
+            grid-area: box1;
+    background-color: rgb(7, 6, 6);
+    text-align: center;
+   }
+   .box2{
+    grid-area: box2;
+    background-color: green;
+    text-align: center;
+   }
+   .box3{
+    grid-area: box3;
+    background-color: orange;
+    text-align: center;
+   }
+   .box4{
+    grid-area: box4;
+    background-color: rgb(19, 19, 18);
+    text-align: center;
+   }
+   @media screen and (max-width:600px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+   }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+</body>
+</html>

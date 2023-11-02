@@ -1,0 +1,35 @@
+.container{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px;
+   }
+   .box{
+    
+    height: 245px;
+     margin: 10px;
+    padding: 20px;
+   }
+   .box1{
+    background-color: red;
+    text-align: center;
+   }
+   .box2{
+    background-color: green;
+    text-align: center;
+   }
+   .box3{
+    background-color: blue;
+    text-align: center;
+   }
+   .box4{
+    background-color: orange;
+    text-align: center;
+   }
+   @media screen and (max-width:800px) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+    
+   }
+   
